@@ -5,7 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-<h1>IT worked</h1>
-<a href="/login">login with different user</a>
+<div th:if="${param.error}" style="color:red">
+    you are not allowed to access this page.
+</div>
+<h1>admin page</h1>
 </body>
 </html>

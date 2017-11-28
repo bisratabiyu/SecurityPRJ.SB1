@@ -10,5 +10,14 @@ public class HomeController {
     {
         return "index";
     }
-
+    @RequestMapping("/login")
+    public String login()
+    {
+        return "login";
+    }
+    @RequestMapping("/admin/first")
+    public String admin()
+    {
+        return "admin";
+    }
 }
